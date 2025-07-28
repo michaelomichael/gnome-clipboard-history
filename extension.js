@@ -371,7 +371,10 @@ class ClipboardIndicator extends PanelMenu.Button {
       return;
     }
 
-    const menuItem = new PopupMenu.PopupMenuItem('', { hover: false });
+    const menuItem = new PopupMenu.PopupMenuItem('', {
+      hover: true,
+      style_class: "ci-history-entry"
+    });
     menuItem.setOrnament(PopupMenu.Ornament.NONE);
 
     menuItem.entry = entry;
